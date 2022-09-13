@@ -19,9 +19,9 @@ namespace backend.DbConfiguration
                 Console.WriteLine("--> Seeding Data...");
 
                 context.Clients.AddRange(
-                    new Client() { Id = 1, Name = "Franco", LastName = "Dreher", Direccion = "Direccion cliente 1" },
-                    new Client() { Id = 2, Name = "Agustin", LastName = "Dreher", Direccion = "Direccion cliente 2" },
-                    new Client() { Id = 3, Name = "Tomas", LastName = "Zappala", Direccion = "Direccion cliente 3" }
+                    new Client() { Id = 1, Name = "Franco", LastName = "Dreher", Address = "Direccion cliente 1" },
+                    new Client() { Id = 2, Name = "Agustin", LastName = "Dreher", Address = "Direccion cliente 2" },
+                    new Client() { Id = 3, Name = "Tomas", LastName = "Zappala", Address = "Direccion cliente 3" }
                 );
 
                 context.SaveChanges();

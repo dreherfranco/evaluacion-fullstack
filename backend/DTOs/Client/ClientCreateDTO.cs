@@ -13,6 +13,6 @@ namespace backend.DTOs.Client
         public string LastName { get; set; }
 
         [Required]
-        public string Direccion { get; set; }
+        public string Address { get; set; }
     }
 }

@@ -1,0 +1,22 @@
+<div class="d-flex">
+    <h2 class="mx-auto"><b>LISTADO DE CLIENTES</b></h2>
+  </div>
+  <div class="table-responsive">
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Direccion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients; let i = index">
+          <td>{{ client.name }}</td>
+          <td>{{ client.lastName }}</td>
+          <td>{{ client.address }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>

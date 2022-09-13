@@ -73,7 +73,7 @@ namespace backend.Controllers
                 var totalTimeRequest = DateTime.Now.Millisecond - initialTimeRequest;
                 Console.WriteLine("Tiempo total request ---> " + totalTimeRequest + "ms");
 
-                return Ok();
+                return Ok(new { msg = "se creo correctamente", statusCode=200});
             }catch (Exception ex)
             {
                 return BadRequest(ex.Message);

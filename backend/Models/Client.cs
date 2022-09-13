@@ -16,7 +16,7 @@ namespace backend.Models
         public string LastName { get; set; }
 
         [Required]
-        public string Direccion { get; set; }
+        public string Address { get; set; }
 
     }
 }
